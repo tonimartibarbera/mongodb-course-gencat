@@ -14,3 +14,5 @@ newman run NttData-Student-Gencat.postman_collection.json -e NttData-Student-PRO
 mongosh "mongodb+srv://cluster0.uflb5z7.mongodb.net/School" --apiVersion 1 --username toni C:\Users\tonim\Documents\MongoSh\scripts\CrudStudentsExercise.js
 ### execute Postman files via Newman
 newman run MongoDB-Data-API.postman_collection.json -e Data-API.postman_environment.json -r htmlextra
+-You must install first pymongo via pip
+python -m pip install pymongo
