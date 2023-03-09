@@ -16,3 +16,7 @@ mongosh "mongodb+srv://cluster0.uflb5z7.mongodb.net/School" --apiVersion 1 --use
 newman run MongoDB-Data-API.postman_collection.json -e Data-API.postman_environment.json -r htmlextra
 -You must install first pymongo via pip
 python -m pip install pymongo
+
+### Mongosh Executes an external javascript file
+mongosh "127.0.0.1/school" "StudentsValidation.js"
+mongosh "127.0.0.1/school" "StudentsInsert.js"
